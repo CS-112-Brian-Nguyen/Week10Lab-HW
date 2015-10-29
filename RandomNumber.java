@@ -20,5 +20,27 @@ import java.util.Scanner;
 		int RandomNo =  lo + (int)(Math.random() * (hi-lo));
 		return RandomNo;
 	}
+	
+	private int Low;
+	private int High;
+	
+	//Define parameter in ()
+	public void setLowNumber(int lowNum)
+	{
+		Low = lowNum;
+	}
 
+	//Define parameter in ()
+	public void setHighNumber(int highNum)
+	{
+		high = highNum;
+	}
+	
+	// Use the instance numbers
+	public int GetANumber()
+	{
+		int RandomNo =  lowNum + (int)(Math.random() * (highNum-lowNum));
+		return RandomNo;
+	}
+	
 }

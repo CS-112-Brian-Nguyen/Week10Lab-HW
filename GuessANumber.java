@@ -30,7 +30,10 @@ public class GuessANumber {
 			System.out.println("You have thrown the dice! Type 'odd' if you think it will be odd"
 					+ " or type 'even' if you think it will be even?");
 			guess = guesses.nextLine();
-			int dice = myRandomNumber.GetANumber(lo , hi);
+			//int dice = myRandomNumber.GetANumber(lo , hi);
+			myRandomNumber.setHighNumber(hi);
+			myRandomNuber.setLowNumber(lo);
+			int dice = myRandomNumber.GetANumber();
 		if ((dice % 2) == 0)
 		{
 			if ("even".equals(guess))
